@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import { Button } from "../../styles/Button";
+import { Logo } from "../../styles/Logo";
 import * as S from "./styles";
 
 export const Login = () => {
@@ -19,18 +21,28 @@ export const Login = () => {
 
   return (
     <S.View>
-      <S.Logo src="../../assets/BlogSSM-logo-noback.png" />
+      <Logo width={"100"} src="../../assets/BlogSSM-logo-noback.png" />
       <S.LoginView>
         <S.MainText>로그인</S.MainText>
         <S.Input type="email" placeholder="BSSM 이메일을 입력해주세요." />
         <S.Input type="text" placeholder="아이디를 입력해주세요." />
         <S.Input type="password" placeholder="비밀번호를 입력해주세요." />
-        <S.Button ref={loginBtn} onClick={loginBtnClick} color="#858585">
+        <Button
+          height={60}
+          ref={loginBtn}
+          onClick={loginBtnClick}
+          color="#858585"
+        >
           로그인
-        </S.Button>
-        <S.Button ref={signUpBtn} onClick={signUpBtnClick} color="#BACAF2">
+        </Button>
+        <Button
+          height={60}
+          ref={signUpBtn}
+          onClick={signUpBtnClick}
+          color="#BACAF2"
+        >
           회원가입
-        </S.Button>
+        </Button>
       </S.LoginView>
     </S.View>
   );

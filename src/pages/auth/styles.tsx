@@ -12,11 +12,6 @@ export const View = styled.div`
   padding: 40px;
 `;
 
-export const Logo = styled.img`
-  width: 100px;
-  margin-bottom: 25px;
-`;
-
 export const MainText = styled.span`
   font-weight: 400;
   font-size: 34px;
@@ -28,6 +23,7 @@ export const LoginView = styled.div`
   padding: 30px;
   width: 300px;
   background: #ffffff;
+  margin-top: 35px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   flex-direction: column;
@@ -44,17 +40,6 @@ export const Input = styled.input`
     outline: none;
     background-color: #d0d0d0;
   }
-`;
-
-export const Button = styled.button`
-  font-family: "Galmuri9";
-  background-color: ${({ color }) => color};
-  color: white;
-  font-size: 25px;
-  height: 60px;
-  border: none;
-  border-bottom: 7px solid
-    ${({ color }) => (color === "#858585" ? "#646464" : "#9EB4EB")};
 `;
 
 export const Email = styled.div`
