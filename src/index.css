@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Galmuri11";
+  src: url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
+}
+
+@font-face {
+  font-family: "Galmuri9";
+  src: url("https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css");
+}
+
+* {
+  font-family: "Galmuri11";
+}
+
 body {
   padding: 0;
   margin: 0;
