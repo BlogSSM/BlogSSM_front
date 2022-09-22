@@ -5,7 +5,7 @@
     "thumbnail": "https://velog.velcdn.com/images/sylagape1231/post/f0baa360-9ae7-4b45-879c-657ecb4ec799/image.gif",
     "postLink": "https://velog.io/@sylagape1231/%EC%A3%BC%EC%86%8C%EC%B0%BD%EC%97%90-naver.com%EC%9D%84-%EC%B9%98%EB%A9%B4-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EC%9D%BC%EC%9D%84-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%B4%EB%B3%B4%EC%9E%90",
     "desc": "📖 웹 브라우저의 동작 과정을 CS 지식이 저처럼 부족한 분들도 이해할 수 있도록 최대한 쉽게 설명하여 정리해보았습니다.",
-    "nickname": "정현우",
+    "name": "정현우",
     "writetime": "2022-09-13 11:49:00",
     "heart": 230
   },
@@ -15,7 +15,7 @@
     "thumbnail": "https://i1.daumcdn.net/thumb/C230x140/?fname=https://blog.kakaocdn.net/dn/J6LJQ/btrDee1zFgZ/1eK4ZzqKHXPbeTWpD1mHz1/img.png",
     "postLink": "https://k99hyerin.tistory.com/entry/React-%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0",
     "desc": "전공 동아리 웹을 개발하고 있는데, 아직 백엔드의 역량이 Auth를 만들 정도는 아니어서 일단 카카오 로그인으로 대신하기로 했다.",
-    "nickname": "김혜린",
+    "name": "김혜린",
     "writetime": "2022-06-15 17:32:21",
     "heart": 12
   },
@@ -25,8 +25,28 @@
     "thumbnail": "https://coinpan.com/files/attach/images/198/320/072/188/3584244a7baeca8a7264652ad3f67212.png",
     "postLink": "",
     "desc": "상디의 꿈을 내가 대신 실현",
-    "nickname": "유루피",
+    "name": "유루피",
     "writetime": "2022-09-22 11:55:34",
     "heart": 25
+  },
+  {
+    "post_id": 3,
+    "title": "[Spring] 간단하게 jwt 발급하기",
+    "thumbnail": "https://images.velog.io/images/hwang-eunji/post/87e49416-9fe5-4db7-a3a5-691a7ca952bf/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-04-14%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%209.13.37.png",
+    "postLink": "",
+    "desc": "Json Web Token이라고 들어봤나?",
+    "name": "진나미",
+    "writetime": "2022-09-21 7:55:34",
+    "heart": 16
+  },
+  {
+    "post_id": 0,
+    "title": "주소창에 naver.com을 치면 일어나는 일을 쉽게 이해해보자",
+    "thumbnail": "https://velog.velcdn.com/images/sylagape1231/post/f0baa360-9ae7-4b45-879c-657ecb4ec799/image.gif",
+    "postLink": "https://velog.io/@sylagape1231/%EC%A3%BC%EC%86%8C%EC%B0%BD%EC%97%90-naver.com%EC%9D%84-%EC%B9%98%EB%A9%B4-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EC%9D%BC%EC%9D%84-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%B4%EB%B3%B4%EC%9E%90",
+    "desc": "📖 웹 브라우저의 동작 과정을 CS 지식이 저처럼 부족한 분들도 이해할 수 있도록 최대한 쉽게 설명하여 정리해보았습니다.",
+    "name": "정현우",
+    "writetime": "2022-09-13 11:49:00",
+    "heart": 230
   }
 ]
