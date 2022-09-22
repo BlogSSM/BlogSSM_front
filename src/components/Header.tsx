@@ -43,5 +43,4 @@ const HeaderBtn = styled.div`
   display: flex;
   align-items: center;
   justify-content: end;
-  left: 0;
 `;
