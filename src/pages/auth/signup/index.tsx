@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import { Button } from "../../styles/Button";
-import { Logo } from "../../styles/Logo";
-import * as S from "./styles";
+import { Button } from "../../../styles/Button";
+import { Logo } from "../../../styles/Logo";
+import * as S from "../auth.styles";
 
 export const SignUp = () => {
   const signUpBtn = useRef<HTMLButtonElement>(null);

@@ -1,7 +1,6 @@
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Login } from "../pages/auth";
-import { SignUp } from "../pages/auth/signUp";
+import { Login } from "../pages/auth/login";
+import { SignUp } from "../pages/auth/signup";
 import { Home } from "../pages/home";
 
 const App = () => {
