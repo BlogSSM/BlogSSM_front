@@ -9,6 +9,7 @@ export const Header = () => {
   const postBtnClick = () => {
     if (postBtn.current !== null) {
       postBtn.current.style.borderBottom = "none";
+      window.location.href = "/write";
     }
   };
   return (
