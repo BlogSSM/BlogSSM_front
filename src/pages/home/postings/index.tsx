@@ -1,5 +1,5 @@
 import * as S from "./style.postings";
-import postSample from "../../../data/post-sample.json";
+import postSample from "../../../dummy/post-sample.json";
 
 export const Postings = () => {
   return (
