@@ -14,29 +14,36 @@ export const Header = () => {
   };
   return (
     <Frame>
-      <Logo width={"70"} src="../../assets/BlogSSM-logo-noback.png" />
-      <HeaderBtn>
-        <Button
-          ref={postBtn}
-          onClick={postBtnClick}
-          height={40}
-          color={"#858585"}
-          style={{ fontFamily: "Galmuri11", fontSize: "18px" }}
-        >
-          글 작성
-        </Button>
-      </HeaderBtn>
+      <Box>
+        <Logo width={"70"} src="../../assets/BlogSSM-logo-noback.png" />
+        <HeaderBtn>
+          <Button
+            ref={postBtn}
+            onClick={postBtnClick}
+            height={40}
+            color={"#858585"}
+            style={{ fontFamily: "Galmuri11", fontSize: "18px" }}
+          >
+            글 작성
+          </Button>
+        </HeaderBtn>
+      </Box>
     </Frame>
   );
 };
 
 const Frame = styled.div`
   display: flex;
-  padding: 0 10%;
-  width: 80%;
+  width: 100%;
   height: 65px;
+  justify-content: center;
   background-color: white;
   border-bottom: 0.4px solid #6b6b6b;
+`;
+
+const Box = styled.div`
+  display: flex;
+  width: 80%;
 `;
 
 const HeaderBtn = styled.div`
