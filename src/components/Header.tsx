@@ -1,10 +1,12 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 import { Logo } from "../styles/Logo";
 
 export const Header = () => {
   const postBtn = useRef<HTMLButtonElement>(null);
+  const location = useLocation();
 
   const postBtnClick = () => {
     if (postBtn.current !== null) {
@@ -12,21 +14,24 @@ export const Header = () => {
       window.location.href = "/write";
     }
   };
+
   return (
     <Frame>
       <Box>
         <Logo width={"70"} src="../../assets/BlogSSM-logo-noback.png" />
-        <HeaderBtn>
-          <Button
-            ref={postBtn}
-            onClick={postBtnClick}
-            height={40}
-            color={"#858585"}
-            style={{ fontFamily: "Galmuri11", fontSize: "18px" }}
-          >
-            글 작성
-          </Button>
-        </HeaderBtn>
+        {!(location.pathname === "/login") && (
+          <HeaderBtn>
+            <Button
+              ref={postBtn}
+              onClick={postBtnClick}
+              height={40}
+              color={"#858585"}
+              style={{ fontFamily: "Galmuri11", fontSize: "18px" }}
+            >
+              글 작성
+            </Button>
+          </HeaderBtn>
+        )}
       </Box>
     </Frame>
   );
