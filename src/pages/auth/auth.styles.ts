@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 export const View = styled.div`
-  position: fixed;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
   display: flex;
   align-items: center;
   text-align: center;
