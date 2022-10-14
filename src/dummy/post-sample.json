@@ -10,16 +10,6 @@
     "heart": 230
   },
   {
-    "post_id": 1,
-    "title": "[React] 카카오 로그인 연동하기",
-    "thumbnail": "https://i1.daumcdn.net/thumb/C230x140/?fname=https://blog.kakaocdn.net/dn/J6LJQ/btrDee1zFgZ/1eK4ZzqKHXPbeTWpD1mHz1/img.png",
-    "postLink": "https://k99hyerin.tistory.com/entry/React-%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0",
-    "desc": "전공 동아리 웹을 개발하고 있는데, 아직 백엔드의 역량이 Auth를 만들 정도는 아니어서 일단 카카오 로그인으로 대신하기로 했다.",
-    "name": "김혜린",
-    "writetime": "2022-06-15 17:32:21",
-    "heart": 12
-  },
-  {
     "post_id": 2,
     "title": "[React] 리액트에서 오올블루 찾기",
     "thumbnail": "https://coinpan.com/files/attach/images/198/320/072/188/3584244a7baeca8a7264652ad3f67212.png",
@@ -40,7 +30,7 @@
     "heart": 16
   },
   {
-    "post_id": 0,
+    "post_id": 4,
     "title": "주소창에 naver.com을 치면 일어나는 일을 쉽게 이해해보자",
     "thumbnail": "https://velog.velcdn.com/images/sylagape1231/post/f0baa360-9ae7-4b45-879c-657ecb4ec799/image.gif",
     "postLink": "https://velog.io/@sylagape1231/%EC%A3%BC%EC%86%8C%EC%B0%BD%EC%97%90-naver.com%EC%9D%84-%EC%B9%98%EB%A9%B4-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EC%9D%BC%EC%9D%84-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%B4%EB%B3%B4%EC%9E%90",
@@ -48,5 +38,15 @@
     "name": "정현우",
     "writetime": "2022-09-13 11:49:00",
     "heart": 230
+  },
+  {
+    "post_id": 1,
+    "title": "[React] 카카오 로그인 연동하기",
+    "thumbnail": "https://i1.daumcdn.net/thumb/C230x140/?fname=https://blog.kakaocdn.net/dn/J6LJQ/btrDee1zFgZ/1eK4ZzqKHXPbeTWpD1mHz1/img.png",
+    "postLink": "https://k99hyerin.tistory.com/entry/React-%EC%B9%B4%EC%B9%B4%EC%98%A4-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%97%B0%EB%8F%99%ED%95%98%EA%B8%B0",
+    "desc": "전공 동아리 웹을 개발하고 있는데, 아직 백엔드의 역량이 Auth를 만들 정도는 아니어서 일단 카카오 로그인으로 대신하기로 했다. 아무거나 막 적어보자 아무거나 막 적어보자 아무거나 막 적어보자",
+    "name": "김혜린",
+    "writetime": "2022-06-15 17:32:21",
+    "heart": 12
   }
 ]
