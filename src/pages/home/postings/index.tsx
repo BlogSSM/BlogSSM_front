@@ -1,5 +1,6 @@
 import * as S from "./style.postings";
 import postSample from "../../../dummy/post-sample.json";
+import moment from "moment";
 
 export const Postings = () => {
   return (
@@ -8,14 +9,25 @@ export const Postings = () => {
         const list = (
           <S.Post>
             <S.Title>{post.title}</S.Title>
-            <S.Thumb src={post.thumbnail} />
-            <S.Desc>{post.desc}</S.Desc>
-            <S.InfoBar>
-              <S.Name>{post.name}</S.Name>
-              <S.Date>{post.writetime}</S.Date>
-              <S.Heart>♥︎</S.Heart>
-              <S.HeartNum>{post.heart}</S.HeartNum>
-            </S.InfoBar>
+            <S.ThumbBox>
+              <S.Thumb src={post.thumbnail} />
+            </S.ThumbBox>
+            <S.Bottom>
+              <S.Desc>{post.desc}</S.Desc>
+              <S.InfoBar>
+                <S.InfoBox>
+                  <span>{post.name}</span>
+                  <span>|</span>
+                  <S.Date>
+                    {moment(post.writetime).format("YYYY년 MM월 DD일")}
+                  </S.Date>
+                </S.InfoBox>
+                <S.HeartBox>
+                  <span>♥︎</span>
+                  <span>{post.heart}</span>
+                </S.HeartBox>
+              </S.InfoBar>
+            </S.Bottom>
           </S.Post>
         );
         return list;
