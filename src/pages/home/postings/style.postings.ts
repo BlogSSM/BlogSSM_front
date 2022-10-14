@@ -5,7 +5,6 @@ export const Frame = styled.div`
   width: 80%;
   grid-template-columns: 32% 32% 32%;
   grid-gap: 2%;
-  /* grid-row-gap: 35px; */
   margin-top: 25px;
 `;
 
@@ -13,7 +12,8 @@ export const Post = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 8px;
-  width: 90%;
+  width: 100%;
+  height: 90%;
 
   background: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
