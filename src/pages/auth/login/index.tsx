@@ -1,6 +1,9 @@
 import React, { useRef, useState } from "react";
+import { useRecoilState } from "recoil";
+import { userState } from "../../../recoil";
 import { Button } from "../../../styles/Button";
 import { Logo } from "../../../styles/Logo";
+import client from "../../../util/client";
 import * as S from "../auth.styles";
 
 export const Login = () => {
@@ -9,10 +12,22 @@ export const Login = () => {
   const [mail, setMail] = useState<string>();
   const [id, setId] = useState<string>();
   const [password, setPassword] = useState<string>();
+  const [curUser, setCurUser] = useRecoilState(userState);
 
-  const loginBtnClick = () => {
+  const loginBtnClick = async () => {
     if (loginBtn.current !== null) {
       loginBtn.current.style.borderBottom = "none";
+    }
+    if (mail && id && password) {
+      const response = await client.post("/login/signin", {
+        id: id,
+        pwd: password,
+        email: mail,
+      });
+      if (response.data["success"]) {
+        localStorage.setItem("token", response.data["token"]);
+        window.location.href = "/";
+      }
     }
   };
   const signUpBtnClick = () => {
@@ -24,7 +39,6 @@ export const Login = () => {
 
   return (
     <S.View>
-      <Logo width={"100"} src="../../assets/BlogSSM-logo-noback.png" />
       <S.LoginView>
         <S.MainText>로그인</S.MainText>
         <S.Input
