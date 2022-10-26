@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Button } from "../../../styles/Button";
 import { Logo } from "../../../styles/Logo";
+import client from "../../../util/client";
 import * as S from "../auth.styles";
 
 export const SignUp = () => {
@@ -11,15 +12,29 @@ export const SignUp = () => {
   const [mail, setMail] = useState<string>();
   const [link, setLink] = useState<string>();
 
-  const signUpBtnClick = () => {
+  const signUpBtnClick = async () => {
     if (signUpBtn.current !== null) {
       signUpBtn.current.style.borderBottom = "none";
+    }
+    if (name && id && password && mail && link) {
+      const response = await client.post("/login/register", {
+        name: name,
+        id: id,
+        pwd: password,
+        email: mail + "@bssm.hs.kr",
+        link: link,
+      });
+
+      if (response.data["success"]) {
+        localStorage.setItem("token", response.data["token"]);
+      } else {
+        alert(response.data["message"]);
+      }
     }
   };
 
   return (
     <S.View>
-      <Logo width={"100"} src="../../assets/BlogSSM-logo-noback.png" />
       <S.LoginView>
         <S.MainText>회원가입</S.MainText>
         <S.Input
