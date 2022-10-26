@@ -18,7 +18,11 @@ export const Header = () => {
   return (
     <Frame>
       <Box>
-        <Logo width={"70"} src="../../assets/BlogSSM-logo-noback.png" />
+        <Logo
+          onClick={() => (window.location.href = "/")}
+          width={"70"}
+          src="../../assets/BlogSSM-logo-noback.png"
+        />
         {!(location.pathname === "/login") && (
           <HeaderBtn>
             <Button
