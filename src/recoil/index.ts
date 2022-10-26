@@ -1,6 +1,17 @@
-import { atom } from "recoil";
+import { atom, RecoilState } from "recoil";
+import { recoilPersist } from "recoil-persist";
 
-export const userState = atom({
+interface User {
+  id: string;
+  pwd: string;
+  email: string;
+  name: string;
+}
+
+const { persistAtom } = recoilPersist();
+
+export const userState: RecoilState<User> = atom({
   key: "UserState",
   default: null,
+  effects_UNSTABLE: [persistAtom],
 });
