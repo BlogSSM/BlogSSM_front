@@ -6,6 +6,9 @@ interface User {
   pwd: string;
   email: string;
   name: string;
+  link: string;
+  userName: string;
+  uid: string;
 }
 
 const { persistAtom } = recoilPersist();
