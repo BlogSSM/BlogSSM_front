@@ -1,8 +1,7 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { useRecoilState } from "recoil";
 import { userState } from "../../../recoil";
 import { Button } from "../../../styles/Button";
-import { Logo } from "../../../styles/Logo";
 import client from "../../../util/client";
 import * as S from "../auth.styles";
 
@@ -25,6 +24,15 @@ export const Login = () => {
         email: mail,
       });
       if (response.data["success"]) {
+        setCurUser({
+          id: response.data["id"],
+          pwd: response.data["pwd"],
+          email: response.data["email"],
+          name: response.data["userName"],
+          link: response.data["link"],
+          userName: response.data["userName"],
+          uid: response.data["uid"],
+        });
         localStorage.setItem("token", response.data["token"]);
         window.location.href = "/";
       }
